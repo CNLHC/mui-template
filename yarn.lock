@@ -191,6 +191,13 @@
     prop-types "^15.7.2"
     react-is "^17.0.2"
 
+"@mui/icons-material@^5.6.2":
+  version "5.6.2"
+  resolved "https://registry.npmmirror.com/@mui/icons-material/-/icons-material-5.6.2.tgz#239c40fc5841dc7c6af7d00e4e988550de170fcd"
+  integrity sha512-9QdI7axKuBAyaGz4mtdi7Uy1j73/thqFmEuxpJHxNC7O8ADEK1Da3t2veK2tgmsXsUlAHcAG63gg+GvWWeQNqQ==
+  dependencies:
+    "@babel/runtime" "^7.17.2"
+
 "@mui/material@^5.6.1":
   version "5.6.1"
   resolved "https://registry.npmmirror.com/@mui/material/-/material-5.6.1.tgz#b74cfbe4666586e054a28cf3df448369892085e1"
@@ -410,6 +417,13 @@
   integrity sha512-pN9V4wx+IW12Rf0FZl6nkvAsa+Uqa6C/mOeYai8cT3RDDVsOY+DoFt58ZeBrSLMXMgPgI4n6MDRrkET+DvkI1g==
   dependencies:
     redux-devtools-extension "*"
+
+"@types/redux-logger@^3.0.9":
+  version "3.0.9"
+  resolved "https://registry.npmmirror.com/@types/redux-logger/-/redux-logger-3.0.9.tgz#9193b3d51bb6ab98d25514ba7764e4f98a64d3ec"
+  integrity sha512-cwYhVbYNgH01aepeMwhd0ABX6fhVB2rcQ9m80u8Fl50ZODhsZ8RhQArnLTkE7/Zrfq4Sz/taNoF7DQy9pCZSKg==
+  dependencies:
+    redux "^4.0.0"
 
 "@types/scheduler@*":
   version "0.16.2"
