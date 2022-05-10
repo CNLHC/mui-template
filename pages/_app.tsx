@@ -10,6 +10,9 @@ import theme from "../theme/theme";
 import { getOrInitializeStore } from "../libs/state";
 import { Provider } from "react-redux";
 import { library } from "@fortawesome/fontawesome-svg-core";
+import "antd/dist/antd.less"; // or 'antd/dist/antd.less'
+import "antd/dist/antd.dark.less";
+
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import "animate.css";
 
