@@ -1,8 +1,12 @@
+import { icon, IconName, IconPrefix } from "@fortawesome/fontawesome-svg-core"
+
 const MenuData: MenuEntry[] = [
     {
         route: [],
         name: "菜单1",
-        key: "menu1"
+        key: "menu1",
+        icon: ["fas", "clipboard"]
+
     },
     {
         route: [],
@@ -43,6 +47,7 @@ export type MenuEntry = {
     route: string[]
     name: string
     key: string
+    icon?: [IconPrefix, IconName]
     children?: MenuEntry[]
 
 }

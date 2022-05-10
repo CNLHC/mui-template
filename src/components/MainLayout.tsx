@@ -27,6 +27,7 @@ import ExpandMore from "@mui/icons-material/ExpandMore";
 
 import { useSidebar } from "../../libs/hooks/utils";
 import MenuData, { MenuEntry } from "./MenuData";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const drawerWidth = 240;
 
@@ -130,15 +131,17 @@ const MenuItem = ({
         }}
         onClick={() => onExpandMenu(me)}
       >
-        <ListItemIcon
-          sx={{
-            minWidth: 0,
-            mr: opened ? 3 : "auto",
-            justifyContent: "center",
-          }}
-        >
-          {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-        </ListItemIcon>
+        {me.icon ? (
+          <ListItemIcon
+            sx={{
+              minWidth: 0,
+              mr: opened ? 3 : "auto",
+              justifyContent: "center",
+            }}
+          >
+            <FontAwesomeIcon icon={me.icon} />
+          </ListItemIcon>
+        ) : null}
         <ListItemText primary={me.name} sx={{ opacity: opened ? 1 : 0 }} />
 
         {me.children && opened ? (
