@@ -19,9 +19,6 @@ import {
 } from "@mui/material";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
-import StarBorder from "@mui/icons-material/StarBorder";
 import ExpandLess from "@mui/icons-material/ExpandLess";
 import ExpandMore from "@mui/icons-material/ExpandMore";
 
@@ -229,7 +226,9 @@ const MainLayout: React.FC<{ children?: ReactNode }> = ({ children }) => {
         </Toolbar>
       </AppBar>
       <SideBar />
-      <div className="p-8 flex-grow ">{children}</div>
+      <div className="p-8 flex-grow " style={{ marginTop: "64px" }}>
+        {children}
+      </div>
     </div>
   );
 };

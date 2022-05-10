@@ -2,5 +2,5 @@ import React from "react";
 import MainLayout from "../src/components/MainLayout";
 
 export default function Index() {
-  return <MainLayout>Hi</MainLayout>;
+  return <MainLayout> Hello World</MainLayout>;
 }
